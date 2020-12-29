@@ -54,7 +54,7 @@ namespace IteratorA
     public class ShoppingCartEnumerator : IEnumerator<ShoppingItem>
     {
         private readonly ShoppingCart _shoppingCart;
-        private int index = 0;
+        private int index = -1;
         public ShoppingItem Current => _shoppingCart.GetItemAt(index);
         object IEnumerator.Current => Current;
 
