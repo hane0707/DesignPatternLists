@@ -47,6 +47,15 @@ namespace DesignPatternLists
             card2.Use();
             card3.Use();
 
+            // 状態パターン
+            Console.WriteLine("■状態パターン");
+            HogeScreen.HogeScreen screen = new HogeScreen.HogeScreen("hoge画面");
+            screen.Register();
+            screen.ChangeTranType(State.IStateWithTranType.TranType.Update); // 状態の変更
+            screen.Register();
+            screen.ChangeTranType(State.IStateWithTranType.TranType.Delete); // 状態の変更
+            screen.Register();
+
             Console.ReadLine();
         }
     }

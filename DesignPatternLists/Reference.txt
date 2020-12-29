@@ -2,3 +2,8 @@
 http://www.hyuki.com/pi/
 https://qiita.com/toshi0607/items/cdc589c58f21c0fc513d
 https://qiita.com/Nuits/items/800f080d44b52e1cae18
+
+対象外のデザインパターン
+・シングルトン
+・プロトタイプ
+・ビルダー
