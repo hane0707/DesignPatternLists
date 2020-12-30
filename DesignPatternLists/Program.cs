@@ -56,6 +56,19 @@ namespace DesignPatternLists
             screen.ChangeTranType(State.IStateWithTranType.TranType.Delete); // 状態の変更
             screen.Register();
 
+            // ストラテジーパターン
+            Console.WriteLine("■ストラテジーパターン");
+            var create = new Strategy.Create();
+            var update = new Strategy.Update();
+            var delete = new Strategy.Delete();
+
+            var operation = new Strategy.UserOparation(create);
+            operation.Regist();
+            operation.SetRegistPattern(update);
+            operation.Regist();
+            operation.SetRegistPattern(delete);
+            operation.Regist();
+
             Console.ReadLine();
         }
     }
