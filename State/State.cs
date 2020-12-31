@@ -2,6 +2,7 @@
 using System;
 
 // 参考：https://qiita.com/a1146234/items/bba88081b0f84d70da1f#brave%E3%82%AF%E3%83%A9%E3%82%B9
+// 参考：https://thinkit.co.jp/article/13182
 // 複数の画面に「新規、更新、削除」のような処理区分を選択できるコントロールがある場合を想定
 // 各画面共通のインターフェースとしてIStateWithTranTypeを定義
 // HogeScreenは個別の画面を想定して実装
