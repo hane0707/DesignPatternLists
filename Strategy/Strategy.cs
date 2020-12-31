@@ -3,6 +3,7 @@
 // 参考：https://www.mum-meblog.com/entry/study/design-pattern
 // DB登録時、呼出側は登録する方法（＝戦略）を必用なものに切り替えるだけで
 // DB登録のために呼び出す関数は同一のままにできる。
+// DB登録の具体的なロジックはインターフェースを実装したクラスに記述する。
 
 /// <summary>
 /// ストラテジーパターン
@@ -44,11 +45,11 @@ namespace Strategy
     /// <summary>
     /// ユーザーの操作を表すクラス（登録操作のみ実装）
     /// </summary>
-    public class UserOparation
+    public class UserOperation
     {
         private IRegistData _registData;
 
-        public UserOparation(IRegistData registData)
+        public UserOperation(IRegistData registData)
         {
             _registData = registData;
         }

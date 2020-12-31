@@ -62,7 +62,7 @@ namespace DesignPatternLists
             var update = new Strategy.Update();
             var delete = new Strategy.Delete();
 
-            var operation = new Strategy.UserOparation(create);
+            var operation = new Strategy.UserOperation(create);
             operation.Regist();
             operation.SetRegistPattern(update);
             operation.Regist();
